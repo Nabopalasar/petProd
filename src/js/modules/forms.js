@@ -1,7 +1,6 @@
 const forms = () => {
     const form = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input'),
-          textArea = document.querySelectorAll('textarea'),
           upload = document.querySelectorAll('[name="upload"]');
     
     const message = {
@@ -33,10 +32,6 @@ const forms = () => {
         });
         upload.forEach(item => {
             item.previousElementSibling.textContent = "Файл не выбран";
-        });
-
-        textArea.forEach(item => {
-            item.value = '';
         });
     };
 
