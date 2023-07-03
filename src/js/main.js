@@ -3,6 +3,7 @@ import sliders from "./modules/sliders";
 import forms from "./modules/forms";
 import mask from "./modules/mask";
 import checkLangInputs from "./modules/checkLangInputs";
+import showMoreStyles from "./modules/showMoreStyles";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkLangInputs('[name="name"]');
     checkLangInputs('[name="message"]');
+    showMoreStyles('.button-styles', '#styles .row')
 });
